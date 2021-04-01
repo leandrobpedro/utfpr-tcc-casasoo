@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<head>
+  <title>Casasoo</title>
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900" rel="stylesheet" type="text/css">
+  <script type="text/javascript" language="javascript" src="script.js"></script>
+</head>
+<!-- /head -->
+
+<!-- body -->
+<body>
+  <!-- header -->
+  <div id="header">
+    <div class="pull-left">
+      <a class="header-logo" href="#">
+        <span>casas<strong>oo</strong></span>
+      </a>
+    </div>
+  </div>
+  <!-- /header -->
+  
+  <!-- 
+  <div style="position: relative; top: 123px; z-index: 3;height: 128px;width: 72px;">
+    <input id="response" value="?servo=90&amp;lamp=0&amp;sensor=27.5345&amp;">
+  </div>
+  <button id="button_foo">Button foo</button> 
+  -->
+
+  <!-- content -->
+  <div id="content">
+    <!-- servo -->
+    <div class="card">
+      <div class="image" style="background-color: #8cc4ff;">
+        <img src="http://i.imgur.com/Emb7MIe.png" onerror="this.src='base.png'">
+        <img id="axis" src="http://i.imgur.com/RrnUa4J.png" onerror="this.src='axis.png'">
+        <span class="title">Servo</span>
+      </div>
+      <!-- <div class="content"></div> -->
+      <div class="action">
+        <input id="range" step="10" type="range" min="0" max="180">
+      </div>
+    </div>
+    <!-- /servo -->
+    <!-- light -->
+    <div class="card">
+      <div class="image" style="background-color: #ad8cff;">
+        <img id="light" src="http://i.imgur.com/P94lyX2.png" onerror="this.src='light.png'" style="-webkit-filter: none;">
+        <span class="title">Bulb light</span>
+      </div>
+      <!-- <div class="content"></div> -->
+      <div class="action">
+        <a id="toggle" href="javascript:void(0)">Toggle light</a>
+      </div>
+    </div>
+    <!-- /light -->
+    <!-- temperature -->
+    <div class="card">
+      <div class="image" style="background-color: #00bbd4;">
+        <h1 id="temp" class="data">00.0&deg;F</h1>
+        <span class="title">Temperature</span>
+      </div>
+      <!-- <div class="content"></div> -->
+      <div class="action">
+        <a id="celsius" href="javascript:void(0)">Celsius</a>
+        <a id="fahrenheit" href="javascript:void(0)" onclick="">Fahrenheit</a>
+      </div>
+    </div>
+    <!-- /temperature -->
+  </div>
+  <!-- /content -->
+  <!-- footer -->
+  <!-- <div id="footer"></div> -->
+  <!-- /footer -->
+</body>
+<!-- /body -->
+</html>

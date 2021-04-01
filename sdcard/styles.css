@@ -1,0 +1,224 @@
+/** 
+ * Project  : Casasoo
+ * File     : styles.css
+ * Version  : 1.0.0
+ * Date     : 2015-07-13
+ * Author   : leandrobpedro@gmail.com
+ */
+
+body {
+  background: #ebeff2;
+  display: flex;
+  font-family: 'Roboto', monospace, sans-serif;
+  justify-content: center;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+h1, h2, h3 {
+  color: black;
+  opacity: .87;
+}
+
+p {
+  color: black;
+  margin-left: 4;
+  opacity: .57;
+}
+
+#header {
+  background-color: #1988ff;
+  border: 1px solid #1988ff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  color: rgba(255,255,255,.87);
+  height: 96px;
+  left: 0px;
+  padding-left: 48px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+#content {
+  background: #ebeff2;
+  height: auto;
+  margin: 96px 0;
+  padding: 24px;
+  width: auto;
+}
+
+#footer {
+  background-color: #303030;
+  border: 1px solid #2b2b2b;
+  color: rgba(255,255,255,.87);
+  height: 56px;
+  left: 0;
+  margin-top: -56px;
+  position: absolute;
+  width: 100%;
+}
+
+/* Servo motor axis */
+#axis {
+  left: 64px;
+  margin: inherit;
+  position: absolute;
+  top: 104px;
+  transform-origin: 131% 50% 0;
+  width: 98px;
+}
+
+/* Casaoo logo */
+.pull-left {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-logo span {
+  color: #fff;
+  font-weight: 300;
+  position: relative;
+  top: -2px;
+}
+
+.header-logo a, a:hover, a:focus, a:active, a:visited, a:link {
+  text-decoration: none;
+}
+
+.header-logo span strong {
+  color: #ff9b06;
+  font-weight: 300;
+}
+
+.header-logo {
+  background: url(http://casasoo.zz.vc/logo.png) no-repeat 0 center,
+              url(logo.png) no-repeat 0 center; /* On error. */
+  font-size: 24px;
+  letter-spacing: 1px;
+  opacity: 1;
+  padding-left: 48px;
+  position: relative;
+  top: 1px;
+}
+
+/* Inputs. */
+input[type="range"]{
+  background: #8cc4ff no-repeat;
+  height:2px;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  background: #3b9aff;
+  border-radius: 100%;
+  box-shadow: 0 1px 2px rgba(43,59,93,0.29);
+  cursor: pointer;
+  height: 20px;
+  position:relative;
+  -webkit-appearance:none;
+  width: 20px;
+  z-index: 1;
+}
+
+input[type=range], [type=number]:focus {
+    outline: none;
+}
+
+input[type="number"] {
+  border: none;
+  color: rgba(0,0,0,0.87);
+  font-family: Roboto;
+  font-size: 2em;
+  text-align: center;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  appearance: none;
+  margin: 0; 
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Card. */
+.card {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #272727;
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  width: 384px;
+}
+
+.card .data {
+  color: rgba(255, 255, 255, .87);
+  font-size: 3em;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.card .title {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 48px;
+}
+
+.card .content {
+  border-radius: 0 0 2px 2px;
+  font-weight: 300;
+  min-height: 80px;
+  padding: 20px;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card .action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 20px;
+}
+
+.card a {
+  color: #ffab40;
+  margin-right: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+}
+
+.card .image {
+  height: 384px;
+  position: relative;
+}
+
+.card .image img {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.card .image .title {
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+}
